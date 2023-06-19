@@ -924,97 +924,6 @@ section {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-# Our Team
---------------------------------------------------------------*/
-/* .team .member {
-  position: relative;
-  box-shadow: 0px 2px 15px rgba(85, 98, 112, 0.08);
-  padding: 30px;
-  border-radius: 4px;
-  background: white;
-}
-
-.team .member .pic {
-  overflow: hidden;
-  width: 140px;
-  border-radius: 4px;
-}
-
-.team .member .pic img {
-  transition: ease-in-out 0.3s;
-}
-
-.team .member:hover img {
-  transform: scale(1.1);
-}
-
-.team .member .member-info {
-  padding-left: 30px;
-}
-
-.team .member h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: #556270;
-}
-
-.team .member span {
-  display: block;
-  font-size: 15px;
-  padding-bottom: 10px;
-  position: relative;
-  font-weight: 500;
-}
-
-.team .member span::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: #dee2e6;
-  bottom: 0;
-  left: 0;
-}
-
-.team .member p {
-  margin: 10px 0 0 0;
-  font-size: 14px;
-}
-
-.team .member .social {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; */
-}
-
-/* .team .member .social a {
-  transition: ease-in-out 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  width: 32px;
-  height: 32px;
-  background: #8795a4;
-}
-
-.team .member .social a i {
-  color: #fff;
-  font-size: 16px;
-  margin: 0 2px;
-}
-
-.team .member .social a:hover {
-  background: #d9232d;
-}
-
-.team .member .social a+a {
-  margin-left: 8px;
-} */
 
 /*--------------------------------------------------------------
 # Our Skills
@@ -1075,12 +984,12 @@ section {
 }
 
 .features .nav-link:hover {
-  color: #d9232d;
+  color: #3340f5;
 }
 
 .features .nav-link.active {
-  color: #d9232d;
-  border-color: #d9232d;
+  color: #3340f5;
+  border-color: #696969;
 }
 
 .features .tab-pane.active {
@@ -1110,7 +1019,7 @@ section {
 
   .features .nav-link.active {
     color: #fff;
-    background: #d9232d;
+    background: #221efa;
   }
 }
 
@@ -1336,6 +1245,14 @@ section {
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+}
+
+.contact h2{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .contact .info h4 {
@@ -2170,6 +2087,14 @@ section .section-title {
     border: none;
     background: #2b2ffe;
     color: rgb(255, 255, 255);
+    @media (max-width: 768px){width: 350px !important;}
+}
+
+#team .frontside .card {
+  border: none;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  @media (max-width: 768px){width: 350px !important;}
 }
 
 .image-flip:hover .backside,
@@ -2357,7 +2282,8 @@ section .section-title {
   padding: 25px 20px;
   color: var(--color-secondary);
   box-shadow: 5px 5px 25px rgba(var(--color-secondary-rgb), 0.15);
-  border-radius: 0;
+  border-radius: 1;
+  border-color: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2372,6 +2298,17 @@ section .section-title {
   line-height: 0;
 }
 
+.features .nav-link button{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0 !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .features .nav-link h4 {
   font-size: 20px;
   font-weight: 600;
@@ -2382,6 +2319,7 @@ section .section-title {
 .features .nav-link:hover {
   color: var(--color-primary);
 }
+
 
 .features .nav-link.active {
   transition: 0.3s;
@@ -2430,6 +2368,14 @@ section .section-title {
   margin-bottom: 0;
 }
 
+.features h2{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -2437,5 +2383,41 @@ section .section-title {
 
   100% {
     opacity: 1;
+  }
+}
+
+/* Equipment section */
+#equipment h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+#equipment h4 {
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 24px;
+}
+
+/* quality section */
+  #quality h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+#quality h4 {
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 24px;
+}
+
+@media (max-width: 768){
+  iframe{
+    width:500px;
+    height: 100%;
   }
 }
