@@ -2069,8 +2069,8 @@ section {
 
 .btn-primary {
     color: #fff;
-    background-color: #0d42ed;
-    border-color: #2115fc;
+    background-color: #ffffff;
+    border-color: #ffffff;
 }
 
 section {
@@ -2209,6 +2209,7 @@ section .section-title {
   padding: 160px 20px 20px 20px;
   position: relative;
   width: 100%;
+  height: 60%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -2230,6 +2231,9 @@ section .section-title {
   transition: 0.3s;
   transition: ease-in-out 0.4s;
   border-radius: 5px;
+  padding-bottom: 0%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .values .card-title {
@@ -2420,4 +2424,26 @@ section .section-title {
     width:500px;
     height: 100%;
   }
+}
+
+
+#projects h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  #projects h2{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+
+  .accordion-button{
+    display:block;
 }
